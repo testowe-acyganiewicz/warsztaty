@@ -1,5 +1,5 @@
 # jak definiujemy obiekty typu string
-tekst = Spring.new("Krótki string")
+tekst = String.new("Krótki string")
 
 # a można też prościej
 tekst = "To jest bardzo długi tekst"
