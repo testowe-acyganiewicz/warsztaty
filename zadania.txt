@@ -1,0 +1,31 @@
+I. Zadania na rozgrzewkę
+  1. Zamień tablicę liczb na tablicę liczb o 1 większych.
+     [2,5,6,10] => [3,6,7,11]
+
+  2. Mamy taką tablicę [nil,nil,34,53,55,22,nil,3,nil,46] jak można usunąć z niej nil'e ?
+
+  3. Poszukaj metody, która zmieni obiekt typu string na tablicę jego znaków
+     "kodowanie" => ["k", "o", "d", "o", "w", "a", "n", "i", "e"]
+
+  4. Wybierz z tablicy tylko liczby podzielne przez 3
+     [1,12, 7, 9, 4] => [12, 9]
+
+  5. Stwórz tablicę [256, 128, 64, 32, 16, 8, 4, 2] inaczej niż ją po prostu wpisując :)
+
+
+II. Napisz własny "szyfrer"!
+  1. Zakładamy, że metoda dostaje słowo. Na wyjściu ma zwrócić słowo składające się ze znaków "o jeden większych" (kolejność w alfabecie)
+    "kodowanie" => "lpepxbojf"
+
+  2. Jak dotąd założyliśmy, że na wejściu dostajemy słowo. Teraz na wejściu dostajemy zdanie ­zwróć ponownie zdanie, w którym każda z liter jest "o jeden większa" z zachowaniem przerw między słowami
+    "kodowanie jest super" => "lpepxbojf kftu tvqfs"
+
+  3. Zamien nasz "szyfrer" na klasę. Nasza klasa będzie przyjmowała jako argument przy tworzeniu ­string do zakodowania i ­nieobowiązkowy argument, który może być wstawiany zamiast spacji. Domyślnie ­ zostawiamy spację.
+    Cipher.new("kodowanie jest super").perform
+    =>"lpepxbojf kftu tvqfs"
+
+    Cipher.new("kodowanie jest super", "#").perform
+    =>"lpepxbojf#kftu#tvqfs"
+
+  Uwaga:
+  Używamy tylko alfabetu angielskiego (bez polskich znaków)
